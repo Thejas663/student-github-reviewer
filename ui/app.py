@@ -13,7 +13,7 @@ if st.button("Analyze Portfolio"):
             try:
                 # IMPORTANT: We will change this URL in Phase 4!
                 # Make sure to keep /review?username={username} at the end!
-                response = requests.post(f"https://YOUR_API_URL.onrender.com/review?username={username}")
+                response = requests.post(f"https://github-reviewer-api-5z0i.onrender.com/review?username={username}")
 
                 if response.status_code == 200:
                     data = response.json()
